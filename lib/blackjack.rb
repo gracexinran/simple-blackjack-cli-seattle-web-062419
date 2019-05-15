@@ -42,7 +42,7 @@ def hit?
   # code hit? here
   prompt_user
   input = get_user_input
-
+  initial_round
   if input == "h"
     deal_card
   else
