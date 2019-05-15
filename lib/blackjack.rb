@@ -19,7 +19,7 @@ def prompt_user
   puts "Type 'h' to hit or 's' to stay"
 end
 
-def get_user_input()
+def get_user_input
   # code #get_user_input here
   gets.chomp
 end
@@ -31,8 +31,8 @@ end
 
 def initial_round
   # code #initial_round here
-  num1 = deal_card()
-  num2 = deal_card()
+  num1 = deal_card
+  num2 = deal_card
   total = num1 + num2
   display_card_total(total)
   return total
@@ -40,7 +40,15 @@ end
 
 def hit?
   # code hit? here
+  prompt_user
+  input = get_user_input
 
+  if input == "h"
+    deal_card
+  else 
+    Break
+  end
+  display_card_total
 end
 
 def invalid_command
