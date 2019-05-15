@@ -50,7 +50,10 @@ def hit?(total)
   display_card_total(total)
 end
 
-def invalid_command
+def invalid_command(input)
+  if input != "s" || input != "h"
+    puts "Please enter a valid command"
+  end
   # code invalid_command here
 end
 
