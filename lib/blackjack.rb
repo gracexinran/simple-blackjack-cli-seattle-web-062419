@@ -31,17 +31,17 @@ end
 
 def initial_round
   # code #initial_round here
-  num1 = deal_card
-  num2 = deal_card
+  num1 = deal_card()
+  num2 = deal_card()
   display_card_total(total)
   total = num1 + num2
 end
 
 def hit?
   # code hit? here
-  prompt_user
-  input = get_user_input
-  initial_round
+  prompt_user()
+  input = get_user_input()
+  initial_round()
   if input == "h"
     deal_card
   else
