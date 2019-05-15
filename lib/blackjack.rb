@@ -47,7 +47,7 @@ def hit?(total)
     num3 = deal_card
 
   elsif input == "s"
-    break
+    num3 = 0
   else
     invalid_command(input)
   end
