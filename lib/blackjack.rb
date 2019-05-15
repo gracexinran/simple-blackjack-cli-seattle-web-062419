@@ -37,12 +37,12 @@ def initial_round
   total = num1 + num2
 end
 
-def hit?
+def hit?(total)
   # code hit? here
-  initial_round
+  
   prompt_user
   input = get_user_input
-
+  display_card_total(total)
   if input == "h"
     deal_card
 
