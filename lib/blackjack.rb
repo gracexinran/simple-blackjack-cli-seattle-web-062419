@@ -52,7 +52,7 @@ def hit?(total)
     invalid_command(input)
   end
   total = total + num3
-  
+
 end
 
 def invalid_command(input)
