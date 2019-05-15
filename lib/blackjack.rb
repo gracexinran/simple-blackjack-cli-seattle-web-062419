@@ -46,7 +46,7 @@ def hit?
   if input == "h"
     deal_card
   else
-    Break
+    break
   end
 
 end
