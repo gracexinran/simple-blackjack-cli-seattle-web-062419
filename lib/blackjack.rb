@@ -45,7 +45,7 @@ def hit?
 
   if input == "h"
     deal_card
-  else 
+  else
     Break
   end
   display_card_total
