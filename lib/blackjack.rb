@@ -70,7 +70,7 @@ def runner
   # code runner here
   welcome
   initial_round
-  total = hit?(total)
+  hit?(total)
   display_card_total(total)
   end_game(total)
 end
