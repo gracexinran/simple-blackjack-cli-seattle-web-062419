@@ -48,7 +48,7 @@ def hit?
   else
     Break
   end
-  
+
 end
 
 def invalid_command
